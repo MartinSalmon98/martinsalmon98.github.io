@@ -12,10 +12,6 @@ body {
   margin: 0;
 }
 
-.hiddenHeader {
-  visibility: hidden;
-}
-
 header {
   position: fixed;
   width: 100%;
@@ -47,6 +43,9 @@ hr{
 /*
     ME
 */
+.title {
+  padding-top: 1%;
+}
 .me {
   min-height: 95vh;
   min-width: 100%;
@@ -61,6 +60,10 @@ hr{
 
 .mePanel2 {
   width: 40%;
+}
+
+.mePanel2 a {
+  color: white;
 }
 
 /*
@@ -126,6 +129,10 @@ hr{
 /*
     Contact
 */
+.resume a{
+  text-decoration: underline;
+  color: white;
+}
 .contact{
   text-align: center;
   margin-bottom: 20px;

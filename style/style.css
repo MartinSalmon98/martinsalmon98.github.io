@@ -88,6 +88,11 @@ hr{
   margin-left: 20px;
 }
 
+.skillsPanel1 a {
+  text-decoration: underline;
+  color: white;
+}
+
 .skillsPanel2 {
   width: 40%;
   display: grid;

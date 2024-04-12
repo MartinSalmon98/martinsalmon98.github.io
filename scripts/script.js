@@ -1,4 +1,18 @@
 (() => {
+
+function calculateAge(birthday) {
+  var ageDifMs = Date.now() - birthday.getTime();
+  var ageDate = new Date(ageDifMs);
+  return Math.abs(ageDate.getUTCFullYear() - 1970);
+}
+
+var ageTxt = document.getElementById("age");
+ageTxt.innerHTML = `${calculateAge(new Date(1998, 2, 31))} - Student`;
+
+var yearTxt = document.getElementById("year");
+var date = new Date();
+yearTxt.innerHTML = `&copy; ${date.getFullYear()}, Martin Salmon - All rights reserved`;
+
   // Wrap every letter in a span
 var textWrapper = document.querySelector('.ml11 .letters');
 textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w|,|')/g, "<span class='letter'>$&</span>");

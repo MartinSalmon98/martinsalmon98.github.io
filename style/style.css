@@ -163,6 +163,10 @@ footer{
   justify-content: space-between;
 }
 
+footer p {
+  margin-left: 20px;
+}
+
 footer a {
   color: white;
   text-decoration: underline;
